@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+
+}
+
+.top-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;  
+    background: #ffffff;
+    border-bottom: 1px solid #bebebe ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+z-index: 100;
+}
+
+.nav-items{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+margin-left: 10%;
+}
+
+.img-logo{
+height: 100%;
+}
+
+.seach-box{
+    width: 200px;
+    height: 25px;
+    background: #ffffff;
+    border: 1px solid #bebebe;
+    border-radius:2px;
+    color: rgb(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.nav-icons{
+height: 22px;
+position: relative;
+
+}
+
+.icons{
+    height: 100%;
+    margin: 0 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.profile-icon{
+    width: 22px;
+    border-radius: 50%;
+    background-image: url(../img/feed/eu3.jpeg);
+    background-size: cover;
+
+}
+
+.two-sec{
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.main-sec{
+    width: 70%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap:30px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.statu-bar{
+    width: 100%;
+    height: 120px;
+    background: #ffffff;
+    border: 2px solid #bebebe;
+    border-radius: 2px;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+
+}
+
+.statu-bar::-webkit-scrollbar{
+    display: none;
+}
+
+.status{
+    flex: 0 0 auto;
+    width: 80px;
+    max-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.dp{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 3px;
+    background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%);
+}
+
+.dp img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.username{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.post-sec{
+    width: 100%;
+    height: auto;
+    border: 1px solid #bebebe;
+    background: #ffffff;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-head{
+    width: 100%;
+    height:60px;
+    padding: 15px;
+    border-bottom: 1px solid #bebebe;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+
+.post-head-left{
+    width: 110PX;
+    height:30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.post-dp{
+    text-decoration: none;
+    height: 30px;
+width: 30px;
+margin-right: 25px;
+object-fit: cover;
+background-size: cover;
+border-radius: 50%;
+border: 0.5px solid #bebebe;
+}
+
+.post-username{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.post-head-right{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+
+.dot-menu{
+    width: 20px;
+}
+
+.post{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-info{
+    width: 100%;
+    padding: 20px;
+}
+
+.likes{
+    font-weight: bold;
+}
+
+.description{
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.description span{
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.time{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+}
+
+.coment-sec{
+    width: 95%;
+    height: 50px;
+    border-radius: 1px solid #bebebe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.coment-sec .post-dp{
+    height: 30px;
+    cursor: pointer;
+}
+
+.commemnt-box{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.comment-btn{
+    width: 70px;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: rgb(0, 110, 255);
+    opacity: 0.5;
+    background: none;
+    cursor: pointer;
+}
+
+.react-sec{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-bottom: -20px;
+    align-items: center;
+}
+
+.react-sec .icons{
+    height: 25px;
+    margin-right: 20px;
+}
+
+.react-sec .icons.save-tag{
+    margin-left: auto;
+}
+
+.posts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right{
+    padding: 20px;
+}
+
+.prof-sec{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.prof-sec .dp{
+    flex: 0 0 auto;
+    padding: 0;
+    background: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.prof-sec:first-child .dp{
+    width: 70px;
+    height: 70px;
+}
+
+.pro-sec .dp img{
+    border: none;
+}
+
+.prof-sec .username{
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    color:#000;
+}
+
+.name{
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.response-btn{
+width: fit-content;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: rgb(0, 110, 255);
+    opacity: 1;
+    font-weight: 700;
+    font-size: 12px;
+    background: none;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.suggetions-sec{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 700;
+    margin: 20px 0;
+}
+
